@@ -1,7 +1,7 @@
 package Ders2;
 
-public class course { //java usulü veritabanı
-    public course(int id,String name,String detail){
+public class Course { //java usulü veritabanı
+    public Course(int id,String name,String detail){
         this.id =id;
         this.name = name;
         this.detail=detail;
@@ -10,5 +10,4 @@ public class course { //java usulü veritabanı
     int id;
     String name;
     String detail;
-
 }
