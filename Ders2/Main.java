@@ -19,7 +19,7 @@ public class Main {
         coursemanager.joinProgram(course2);
 
         Manager Reg = new Manager();
-        coursemanager.register(course1);
+        Reg.register(course1);
 
     }
 }
