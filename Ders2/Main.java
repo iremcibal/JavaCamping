@@ -4,7 +4,8 @@ public class Main {
     public static void main(String[] args) {
         /*kodlama.io sitesinde üç adet özellik nesnesi olarak tanımlanmış kurslar
         vardır.*/
-        //yeni kursun bilgileri oluşturuluyor
+        //Class'lar referans tiplerdir.
+        //Course türünde yeni bir nesne üretmiş olduk
         Course course1 = new Course(1,"Engin Demiroğ","Ücretsiz C#");
         Course course2 = new Course(2,"Engin Demiroğ","Java-React");
         //Kursları class'a atıyoruz
