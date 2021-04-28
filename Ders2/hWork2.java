@@ -20,9 +20,14 @@ public class hWork2 {
     public static String sehirVer(){
         return "Sinop";
     }
+
     public static int topla(int a,int b){
         return a+b;
     }
+    public static int topla(int a,int b,int c){
+        return a+b+c;
+    }//Method overloading:Parametrelerinin imzasının farklı olmasından dolayı methodlar ikisi de aynı isimle kullanılır
+
     //Çoklu sayı göndermek ve toplamak
     public static int topla2(int... sayi){
         int toplam=0;
@@ -31,5 +36,4 @@ public class hWork2 {
         }
         return toplam;
     }
-
 }
