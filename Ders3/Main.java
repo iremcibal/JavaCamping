@@ -7,6 +7,14 @@ public class Main {
         student1.setId(1);
         student1.setFirstName("İrem ");
         student1.setLastName("Balcı");
+
+        Student student2 =new Student();
+        student2.setId(2);
+        student2.setFirstName("Haşim ");
+        student2.setLastName("Balcı");
+        //Diziye atamak öğrencileri listelemize yardımcı olacak
+        Student[] students = {student1,student2};
+
         //Yeni eğitimci nesnesi bilgileri
         Instructor instructor1 = new Instructor();
         instructor1.setId(1);
@@ -25,10 +33,13 @@ public class Main {
         //Öğrenci datasına öğrenci ekleniyor
         StudentManager studentManager = new StudentManager();
         studentManager.add(student1);
+        studentManager.add(student2);
 
         //Öğrenci kursa katılıyor
         CourseManager courseManager = new CourseManager();
         courseManager.studentAdd(student1,course2);
+        courseManager.studentAdd(student2,course2);
+        courseManager.courseList(course2,students);
 
 
 
