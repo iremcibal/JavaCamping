@@ -29,6 +29,6 @@ public class HibernateUserDao implements UserDao {
 
     @Override
     public boolean getUser(String email) {
-        return userList.stream().filter(o -> o.geteMail().equals(email)).findFirst().isPresent();
+        return userList.stream().anyMatch(o -> o.geteMail().equals(email));
     }
 }
